@@ -7,7 +7,6 @@
 
     <class name="Dot" table="dots">
         <id name="jsessionid" column="jsessionid"/>
-        <property name="id" column="id"/>
         <property name="x" column="x"/>
         <property name="y" column="y"/>
         <property name="r" column="r"/>

@@ -2,7 +2,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://java.sun.com/jsf/html">
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
 
 <h:head>
 
@@ -37,9 +38,9 @@
         <h:outputScript library="scripts" name="Clock.js"/>
         <tr>
             <td>
-                <h:form>
-                    <h:commandButton class="buttons" value="К таблице" action="gototable"/>
-                </h:form>
+                <h:link outcome="index" styleClass="link">
+                    К контенту
+                </h:link>
             </td>
         </tr>
     </table>

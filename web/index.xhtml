@@ -10,6 +10,9 @@
     <link href="resources/styles/Styles.css" rel="stylesheet" type = "text/css"/>
 </h:head>
 <h:body styleClass="body">
+    <h:link outcome="main" id="backlink">
+        Назад
+    </h:link>
     <table class = "table main">
         <tr>
             <td colspan="2">
@@ -186,9 +189,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
-                            </td>
-                            <td>
+                            <td colspan="3">
                                 <h:commandButton value="Проверить" action="#{results.addDot()}">
                                     <f:ajax render="checker"/>
                                     <f:ajax render="result_table"/>
@@ -196,11 +197,6 @@
                                     <f:ajax render="y_value"/>
                                     <f:ajax render="x_value"/>
                                 </h:commandButton>
-                            </td>
-                            <td>
-                                <h:form>
-                                    <h:commandButton value="На начало" action="gotomain" class="buttons"/>
-                                </h:form>
                             </td>
                         </tr>
                         <tr>

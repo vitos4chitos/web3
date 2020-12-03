@@ -3,7 +3,7 @@
     background: black;
 }
 
-.link:hover{
+.link:hover, #backlink:hover{
     color: deeppink;
 }
 
@@ -24,6 +24,8 @@ td{
     padding: 0px;
 }
 
+
+
 .table{
     width: 95%;
     height: 100%;
@@ -36,7 +38,7 @@ td{
     width: 100%;
 }
 
-.header, .values, .table input, .value, .link, #answers, #value_of_y, .clock{
+.header, .values, .table input, .value, .link, #answers, #value_of_y, .clock, #backlink{
     color: white;
     font-weight: bold;
     font-style: italic;
@@ -44,11 +46,11 @@ td{
     text-shadow: 0 0 1px #ffffff, 0 0 2px #ffffff, 0 0 4px #ffffff, 0 0 10px #ff00de, 0 0 13px #ff00de, 0 0 18px #ff00de, 0 0 20px #ff00de, 0 0 30px #ff00de;
 }
 
-.values, .value, #answers{
+.values, .value, #answers, #backlink{
     font-size: 25px;
 }
 
-.link, .link:visited, #answers{
+.link, .link:visited, #answers, #backlink{
     text-decoration: none;
     text-shadow: none;
 }
@@ -131,6 +133,9 @@ td{
     stroke: rebeccapurple;
 }
 
+#backlink{
+    text-align: left;
+}
 /*#result_table .values{*/
 /*    word-wrap: break-word;*/
 /*}*/

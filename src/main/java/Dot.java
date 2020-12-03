@@ -1,10 +1,15 @@
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.io.Serializable;
 
 @ManagedBean
 @SessionScoped
 public class Dot implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id;
     private Double x;
     private Double y;
